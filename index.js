@@ -5,8 +5,10 @@ const bodyParser = require('body-parser');
 const request = require('request');
 const passport = require('passport');
 const process = require('process');
+const helmet = require('helmet');
     
-
+const app = express();
+app.use(helmet());
 
 const routes = require('./routes/routes');
 const path = require('path');
@@ -19,7 +21,6 @@ global.sequelize = sequelize;
 
 const fs = require('fs');
 const port = process.env.PORT;
-const app = express();
 const connection = app.listen(port, (req, res)=>{
     console.log(`Server started and listening on port ${port}`)
 })

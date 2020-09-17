@@ -1,6 +1,9 @@
 {
   "name": "node-class",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.4.0"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,6 +20,7 @@
     "favour-frame-print": "^1.0.0",
     "formidable": "^1.2.2",
     "fs": "0.0.1-security",
+    "helmet": "^4.1.1",
     "lodash": "^4.17.19",
     "mongodb": "^3.6.0",
     "mongoose": "^5.10.0",
