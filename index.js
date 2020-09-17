@@ -215,7 +215,7 @@ io.on('connection', (socket)=>{
     
     socket.on('newMsg', (data)=>{
         let date = new Date().toLocaleTimeString();
-        if(data.message > 0){
+        if(data.message.length > 0){
             socket.broadcast.emit('newMessage', {content: data.message, time: date})
         }
     })
